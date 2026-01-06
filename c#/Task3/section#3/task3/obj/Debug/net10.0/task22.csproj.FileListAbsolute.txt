@@ -1,0 +1,14 @@
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\bin\Debug\net10.0\task22.exe
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\bin\Debug\net10.0\task22.deps.json
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\bin\Debug\net10.0\task22.runtimeconfig.json
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\bin\Debug\net10.0\task22.dll
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\bin\Debug\net10.0\task22.pdb
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\task22.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\task22.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\task22.AssemblyInfo.cs
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\task22.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\task22.dll
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\refint\task22.dll
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\task22.pdb
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\task22.genruntimeconfig.cache
+C:\Users\USER\OneDrive\Desktop\c#\task22\task22\obj\Debug\net10.0\ref\task22.dll
