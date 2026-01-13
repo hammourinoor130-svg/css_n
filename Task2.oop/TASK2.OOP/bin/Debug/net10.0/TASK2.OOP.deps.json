@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "TASK2.OOP/1.0.0": {
+        "runtime": {
+          "TASK2.OOP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TASK2.OOP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

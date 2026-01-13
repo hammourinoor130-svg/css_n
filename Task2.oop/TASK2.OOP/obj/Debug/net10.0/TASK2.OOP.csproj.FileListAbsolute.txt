@@ -1,0 +1,14 @@
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\bin\Debug\net10.0\TASK2.OOP.exe
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\bin\Debug\net10.0\TASK2.OOP.deps.json
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\bin\Debug\net10.0\TASK2.OOP.runtimeconfig.json
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\bin\Debug\net10.0\TASK2.OOP.dll
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\bin\Debug\net10.0\TASK2.OOP.pdb
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\TASK2.OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\TASK2.OOP.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\TASK2.OOP.AssemblyInfo.cs
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\TASK2.OOP.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\TASK2.OOP.dll
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\refint\TASK2.OOP.dll
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\TASK2.OOP.pdb
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\TASK2.OOP.genruntimeconfig.cache
+C:\Users\USER\OneDrive\Desktop\github\TASK2.OOP\TASK2.OOP\obj\Debug\net10.0\ref\TASK2.OOP.dll
