@@ -1,139 +1,165 @@
-﻿
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-class BankAccount
-{
-    private string accountNumber;
-    private string accountHolderName;
-    private double balance;
-    private string accountType;
-    private string branchName;
-
-    public BankAccount(string accNum, string holderName, double bal, string type, string branch)
+    class banksystem
     {
-        accountNumber = accNum;
-        accountHolderName = holderName;
+        private string AccountHolder;
+        private string branchName;
+        private int phoneNumber;
+        private int balance;
+        private int accountNumber;
 
-        if (bal >= 0)
-            balance = bal;
-        else
+        public string accountholder
         {
-            Console.WriteLine("Error: Initial balance cannot be negative!");
-            balance = 0;
+            get { return AccountHolder; }
+            set { AccountHolder = value; }
         }
 
-        accountType = type;
-        branchName = branch;
-    }
-
-    ~BankAccount()
-    {
-        Console.WriteLine("BankAccount object is destroyed.");
-    }
-
-    public string AccountNumber
-    {
-        get { return accountNumber; }
-        set { accountNumber = value; }
-    }
-
-    public string AccountHolderName
-    {
-        get { return accountHolderName; }
-        set { accountHolderName = value; }
-    }
-
-    public double Balance
-    {
-        get { return balance; }
-        set
+        public string BranchName
         {
-            if (value >= 0)
-                balance = value;
-            else
-                Console.WriteLine("Error: Balance cannot be negative!");
+            get { return branchName; }
+            set { branchName = value; }
         }
-    }
-    public string AccountType
-    {
-        get { return accountType; }
-        set { accountType = value; }
-    }
 
-    public string BranchName
-    {
-        get { return branchName; }
-        set { branchName = value; }
-    }
-
-    public void Deposit(double amount)
-    {
-        if (amount > 0)
+        public int PhoneNumber
         {
-            balance += amount;
-            Console.WriteLine("Deposit successful. New Balance: " + balance);
+            get { return phoneNumber; }
+            set { phoneNumber = value; }
         }
-        else
-        {
-            Console.WriteLine("Error: Deposit amount must be positive!");
-        }
-    }
 
-    public void Withdraw(double amount)
-    {
-        if (amount > 0 && amount <= balance)
+        public int Balance
+        {
+            get { return balance; }
+            set { balance = value; }
+        }
+
+        public int AccountNumber
+        {
+            get { return accountNumber; }
+            set { accountNumber = value; }
+        }
+
+        public banksystem(string AccountHolder , int phoneNumber, string branchName, int balance, int accountNumber)
+        {
+            this.AccountHolder = AccountHolder;
+            this.branchName = branchName;
+            this.phoneNumber = phoneNumber;
+            this.balance = balance;
+            this.accountNumber = accountNumber;
+        }
+
+        public void CreateAccount()
+        {
+            Console.Write("Enter your accountholder: ");
+           accountholder = Console.ReadLine();
+
+            Console.Write("Enter your Phone number: ");
+            phoneNumber = int.Parse(Console.ReadLine());
+
+
+            Console.Write("Enter Branch Name: ");
+            branchName = Console.ReadLine();
+
+
+
+            Console.Write("Enter Balance: ");
+            balance = int.Parse(Console.ReadLine());
+
+        }
+
+        public void Withdraw(int amount)
         {
             balance -= amount;
-            Console.WriteLine("Withdraw successful. New Balance: " + balance);
         }
-        else
+
+        public void Transfer(banksystem target, int amount)
         {
-            Console.WriteLine("Error: Insufficient balance or invalid amount!");
+            balance -= amount;
+            target.balance += amount;
+        }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Bank accountholder: {AccountHolder}");
+            Console.WriteLine($"Branch: {branchName}");
+            Console.WriteLine($"Balance: {balance}");
+            Console.WriteLine($"Account Number: {accountNumber}");
+        }
+
+        ~banksystem()
+        {
+
         }
     }
 
-    public void DisplayInfo()
+    internal class Program
     {
-        Console.WriteLine("------ Account Information ------");
-        Console.WriteLine("Account Number: " + accountNumber);
-        Console.WriteLine("Account Holder: " + accountHolderName);
-        Console.WriteLine("Balance: " + balance);
-        Console.WriteLine("Account Type: " + accountType);
-        Console.WriteLine("Branch Name: " + branchName);
-        Console.WriteLine("--------------------------------");
-    }
-}
+        static void Main(string[] args)
+        {
+            banksystem b1 = new banksystem("Noor", "Amman", "0791828411", 200, 1234567);
+            banksystem b2 = new banksystem("Salsabeel", "irbid", "075623140", 500, 9876543);
 
-class Program
-{
-    static void Main()
-    {
-       
-        BankAccount acc1 = new BankAccount(
-            "112",
-            "Noor Mahmoud",
-            1500,
-            "Saving",
-            "Amman Branch"
-        );
+            Console.WriteLine("1- Create Account");
+            Console.WriteLine("2- Withdraw");
+            Console.WriteLine("3- Transfer");
+            Console.WriteLine("4- Show Info");
 
-        acc1.Deposit(500);
-        acc1.Withdraw(300);
-        acc1.DisplayInfo();
+            int choice = int.Parse(Console.ReadLine());
 
-        Console.WriteLine();
+            switch (choice)
+            {
 
-        
-        BankAccount acc2 = new BankAccount(
-            "2002",
-            "Salsabeel Ali",
-            210,
-            "Current",
-            "Irbid Branch"
-        );
+                case 1:
 
-        acc2.Withdraw(2000);   
-        acc2.Deposit(-100);    
-        acc2.DisplayInfo();
-    }
-}
+
+                    b1.CreateAccount();
+                    Console.WriteLine("Account Created Successfully");
+
+                    break;
+
+
+                case 2:
+                    Console.Write("Withdraw Amount: ");
+                    int y = int.Parse(Console.ReadLine());
+
+                    if (y % 5 == 0)
+                    {
+                        b1.Withdraw(y);
+                        Console.WriteLine("Withdraw Done");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid withdraw amount");
+                    }
+                    break;
+
+
+                case 3:
+                    Console.Write("Transfer Amount: ");
+                    int x = int.Parse(Console.ReadLine());
+
+                    if (x >= 1)
+                    {
+                        b1.Transfer(b2, x);
+                        Console.WriteLine("Transfer Done");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid transfer amount");
+                    }
+                    break;
+
+
+                case 4:
+                    b1.PrintInfo();
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid Choice");
+                    break;
+            }
+        }
+   
